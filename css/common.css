@@ -9,11 +9,15 @@ html
 	color: #fff;
 
 }
+.side {
+	border-bottom: 1px solid LightGrey;
+	padding: 7px 0 7px 0;
+}
 .nav-top{
 	font-size: 20px;
 }
 .side a{
-	font-size: 19px;
+	font-size: 16px;
 	color: rgb(199,21,133);
 	font-weight: bold;
 	font-family: sans-serif;
