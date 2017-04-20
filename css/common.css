@@ -4,6 +4,9 @@ html
 	padding: 0;
 	font: normal 100%/1.4 Georgia,serif;
 }
+html, body{
+	overflow-x:hidden;
+}
 .current{
 	background-color: #000531;
 	color: #fff;
@@ -27,8 +30,10 @@ html
 }
 .index-head{
 	color: rgb(	0,191,255);
+	font-weight: bold;
 }
-/*.side a:hover{
+.side:hover{
 	background-color: skyblue;
 	border: 1px solid black;
-}*/
+}
+
