@@ -1,3 +1,5 @@
+---
+---
 html
 {
 	margin: 0;
@@ -7,13 +9,33 @@ html
 html, body{
 	overflow-x:hidden;
 }
+.common-header-row{
+	background-color: #2d2d2d;
+}
 .current{
 	background-color: #000531;
 	color: #fff;
-
 }
 .white-text{
 	color: #fff !important;
+}
+.bio-color{
+	color:#843eb8 !important;
+}
+.international-small{
+	font-size: 1.5rem;
+}
+.common-header-bg-1{
+	height: 180px;
+	width: 100%;
+	background-image: url('{{site.baseurl}}/img/vit_tt_1a.png');
+background-size: cover;
+}
+.common-header-bg-2{
+	height: 180px;
+	width: 100%;
+	background-image: url('{{site.baseurl}}/img/vit_tt.jpg');
+background-size: cover;
 }
 .side {
 	border-bottom: 1px solid LightGrey;
