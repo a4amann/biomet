@@ -12,6 +12,9 @@ html, body{
 	color: #fff;
 
 }
+.white-text{
+	color: #fff !important;
+}
 .side {
 	border-bottom: 1px solid LightGrey;
 	padding: 7px 0 7px 0;
