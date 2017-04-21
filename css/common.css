@@ -61,6 +61,9 @@ background-size: cover;
 	background-color: skyblue;
 	padding-left: 1rem;
 }
+.current{
+	background-color: skyblue;
+}
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
@@ -80,4 +83,27 @@ td, th {
  -moz-transition: all 0.5s ease;
  -o-transition: all 0.5s ease;
  transition: all 0.5s ease;
+}
+.contact-address, .advisor-name, .post{
+	font-size: 18px;
+	font-weight: bold;
+	border-bottom: 1px solid rgb(200,200,200) ;
+	padding-bottom: 3px.
+}
+/*.change-font{
+	font-size: 19px;
+}*/
+.about-center{
+	margin-right: 20px;
+	margin-left: 10px;
+}
+
+.theme-list{
+	margin: 5px;
+	font-size: 16px;
+
+}
+.theme-list:hover{
+	font-weight: bolder;
+	font-size: 18px;
 }

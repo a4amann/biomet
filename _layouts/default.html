@@ -6,7 +6,12 @@
 	<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/common.css">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/font-awesome/css/font-awesome.min.css">
-
+	<style type="text/css">
+	.current
+	{
+		background-color: skyblue;
+	}
+	</style>
 
 </head>
 
@@ -49,11 +54,16 @@
 				<div class="col-sm-10">
 					<ul class="list-unstyled">
 						<a href="{{site.baseurl}}/" class="sidelink"><li class="side">Welcome</li></a>
-						<a href="{{site.baseurl}}/about.html" class="sidelink"><li class="side">About</li></a>
-						<a href="{{site.baseurl}}/conferencetheme.html" class="sidelink"><li class="side">Conference Themes</li></a>
-						<a href="{{site.baseurl}}/dates.html" class="sidelink"><li class="side">Important dates</li></a>
-						<a href="{{site.baseurl}}/advisors.html" class="sidelink"><li class="side">Advisors</li></a>
-						<a href="{{site.baseurl}}/contact.html" class="sidelink"><li class="side">Contact Us</li></a>
+
+						<a href="{{site.baseurl}}/about.html"  class="{% if page.url == '../about.html' %}current{% endif %} sidelink"><li class="side">About</li></a>
+
+						<a href="{{site.baseurl}}/conferencetheme.html" class="{% if page.url == '/{{site.baseurl}}/conferencetheme.html' %}current{% endif %} sidelink"><li class="side">Conference Themes</li></a>
+
+						<a href="{{site.baseurl}}/dates.html" class="{% if page.url == '{{site.baseurl}}/dates.html' %}current{% endif %} sidelink"><li class="side">Important dates</li></a>
+
+						<a href="{{site.baseurl}}/advisors.html" class="{% if page.url == '{{site.baseurl}}/advisors.html' %}current{% endif %} sidelink"><li class="side">Advisors</li></a>
+
+						<a href="{{site.baseurl}}/contact.html" class="{% if page.url == '{{site.baseurl}}/contact.html' %}current{% endif %} sidelink"><li class="side">Contact Us</li></a>
 					</ul>
 				</div>
 			</div>

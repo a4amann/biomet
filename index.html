@@ -38,6 +38,15 @@ html,body{
 	margin-right: auto;
 	width: 180px;
 }
+.down{
+	position: absolute;
+	bottom: 7px;
+	left: 49%;
+}
+#down-logo{
+	width: 30px;
+	height: 30px;
+}
 
 </style>
 
@@ -64,6 +73,11 @@ html,body{
 			<h2 class="text-center white-text">International conference on <span class="bio-color">BioM</span>aterials, <span class="bio-color">BioE</span>ngineering and <span class="bio-color">BioT</span>heronostics</h2>
 			<h3 class="white-text"><i class="fa fa-calendar" aria-hidden="true"></i> 24th-28th July, 2018 | <i class="fa fa-map-marker" aria-hidden="true"></i> VIT University, Vellore</h3>
 		</header>
+		<div class="down">
+    				<a href="#" id="down" >
+          				<span id="down-logo" class="glyphicon glyphicon-circle-arrow-down"></span>
+        			</a>
+        </div>
 	</div>
 </div>
 	<div class="try">
@@ -74,7 +88,7 @@ html,body{
 					</div>
 					<div class="col-sm-10">
 						<ul class="list-unstyled">
-							<a href="#" class="sidelink"><li class="side">Welcome</li></a>
+							<a href="#" class="sidelink"><li class="side current">Welcome</li></a>
 							<a href="about.html" class="sidelink"><li class="side">About</li></a>
 							<a href="conferencetheme.html" class="sidelink"><li class="side">Conference Themes</li></a>
 							<a href="dates.html" class="sidelink"><li class="side">Important dates</li></a>
@@ -94,19 +108,21 @@ html,body{
 				<div class="row">
 					<div class="container">
 						<div class="col-sm-6">
-							<h2 class="index-head">VIT International conference on BioMaterials, BioEngineering and BioTheronostics</h2>
-							<hr>
+							<h2 class="index-head">VIT International conference on BioMaterials, BioEngineering and BioTheronostics</h2><hr>
+							<h3>In association with :</h3>
+							<ul>
+								<li>Society for Biomaterials and Artificial Organs (India) </li>
+								<li>Society for Tissue Engineering and Regenerative Medicine (India)
+								</li>
+							</ul><br>
 
-							<!--<script src="//www.powr.io/powr.js" external-type="html"></script>
-							<div class="powr-countdown-timer" id="93557ed3_1492543930072"></div>-->
-
-
-							<div data-type="countdown" data-id="117947" class="tickcounter" style="width: 100%; position: relative; padding-bottom: 20%; color:skyblue;"><a href="//www.tickcounter.com/countdown/117947/my-countdown" title=" "> </a><a href="//www.tickcounter.com/" title=""> </a></div><script>(function(d, s, id) { var js, pjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//www.tickcounter.com/static/js/loader.js"; pjs.parentNode.insertBefore(js, pjs); }(document, "script", "tickcounter-sdk"));</script>
+							<div data-type="countdown" data-id="121039" class="tickcounter" style="width: 100%; position: relative; padding-bottom: 25%"><a href="//www.tickcounter.com/countdown/121039/biomet" title="Biomet">Biomet</a><a href="//www.tickcounter.com/" title="Countdown">Countdown</a></div><script>(function(d, s, id) { var js, pjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//www.tickcounter.com/static/js/loader.js"; pjs.parentNode.insertBefore(js, pjs); }(document, "script", "tickcounter-sdk"));</script>
+					
 
 							<br><br>
 							<p class="text-justify">Dear Colleagues,<br><br>
 								BioMET 2018 will be an attempt to bring in leading scientists of various fields, clinicians and delegates from healthcare industry together on a single platform. Scientists, clinicians and engineers, from all around the world, having varied research interests like-biomaterials, nanotechnology, tissue engineering, stem cells, molecular biology, drug delivery and gene therapy are invited to critically discuss the challenges and options in clinical theranostics. The conference will consist of two days pre-conference workshop (24th-25th July) followed by the three days (26th-28th July) conference that include- keynote and plenary sessions, brain-storming panel discussions by invited speakers, oral and poster presentation by participants.
-								<br>
+								<br><br><br>
 
 
 								Yours sincerely,<br>
@@ -133,19 +149,11 @@ html,body{
 							<p>This is International</p><br>
 							<p>COnference meet 2k'17</p><br>
 							<hr>
-							<p> t<br>
-								w<br>
-								e<br>
-								e<br>
-								t<br>
-								s<br>
-								e<br>
-								c<br>
-								t<br>
-								i<br>
-								o<br>
-								n<br>
-							</p>
+							<img src="img/stermi.png" class="img img-responsive" alt="Stermi">
+							<br>
+							<img src="img/cbcmt.png" class="img img-responsive" alt="CBCMT">
+							<br>
+							<img src="img/sfbar.png" class="img img-responsive" alt="SFBAR">
 						</div>
 					</div>
 				</div>
@@ -171,7 +179,17 @@ html,body{
 
 			</div>
 		</div>
-		<script type="text/javascript" src="{{site.baseurl}}/js/jquery.js"></script>
+
+		<script type="text/javascript" src="js/jquery.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script>
+		$(document).ready(function(){
+			$('.down').click(function() {
+				$('html, body').animate({scrollTop: $('.try').offset().top}, 1000);
+				
+			});
+		});
+		
+	    </script>
 	</body>
 	</html>
