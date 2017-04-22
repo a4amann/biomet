@@ -33,7 +33,7 @@ html, body{
 .common-header-bg-1{
 	height: 180px;
 	width: 100%;
-	background-image: url('{{site.baseurl}}/img/vit_tt_1a.png');
+	background-image: url('{{site.baseurl}}/img/vit_tt.jpg');
 background-size: cover;
 }
 .common-header-bg-2{
