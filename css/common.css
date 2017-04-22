@@ -25,7 +25,12 @@ html, body{
 .international-small{
 	font-size: 1.5rem;
 }
-.common-header-bg-1{
+.add-img {
+	background-image: url('{{site.baseurl}}/img/vit_tt_1.jpg');
+	background-size: cover;
+
+}
+/*.common-header-bg-1{
 	height: 180px;
 	width: 100%;
 	background-image: url('{{site.baseurl}}/img/vit_tt_1a.png');
@@ -34,9 +39,9 @@ background-size: cover;
 .common-header-bg-2{
 	height: 180px;
 	width: 100%;
-	background-image: url('{{site.baseurl}}/img/vit_tt.jpg');
+	background-image: url('{{site.baseurl}}/img/vit_tt_1.jpg');
 background-size: cover;
-}
+}*/
 .side {
 	border-bottom: 1px solid LightGrey;
 	padding: 7px 0 7px 0;
