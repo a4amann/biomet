@@ -94,16 +94,14 @@ td, th {
 	font-size: 19px;
 }*/
 .about-center{
-	margin-right: 20px;
-	margin-left: 10px;
+	/*margin-right: 20px;
+	margin-left: 10px;*/
+	width: 960px;
+	margin: 0px auto;
 }
 
 .theme-list{
 	margin: 5px;
 	font-size: 16px;
 
-}
-.theme-list:hover{
-	font-weight: bolder;
-	font-size: 18px;
 }
