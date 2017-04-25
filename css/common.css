@@ -10,7 +10,7 @@ html, body{
 	overflow-x:hidden;
 }
 .common-header-row{
-	background-color: #2d2d2d;
+	background-color: #000531;
 }
 .current{
 	background-color: #000531;
@@ -59,7 +59,8 @@ background-size: cover;
 	border-radius: 0;
 }
 .index-head{
-	color: rgb(	0,191,255);
+	/*color: rgb(	0,191,255);*/
+	color: rgb(199,21,133);
 	font-weight: bold;
 }
 .side:hover{
@@ -68,6 +69,9 @@ background-size: cover;
 }
 .current{
 	background-color: skyblue;
+}
+.footer-link{
+	color: rgb(199,21,133);
 }
 table {
     font-family: arial, sans-serif;
@@ -110,3 +114,8 @@ td, th {
 	font-size: 16px;
 
 }
+
+.container2 {
+    padding: 2px 0px;
+}
+
