@@ -9,6 +9,12 @@ html
 html, body{
 	overflow-x:hidden;
 }
+@media screen and (max-width: 699px){
+	.about-text{
+		padding-left: 8px;
+		padding-right: 8px; 
+	}
+}
 .common-header-row{
 	background-color: #000531;
 }
