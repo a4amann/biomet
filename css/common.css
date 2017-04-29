@@ -9,10 +9,16 @@ html
 html, body{
 	overflow-x:hidden;
 }
+.about-text{
+	padding-right: 8px;
+}
 @media screen and (max-width: 699px){
 	.about-text{
 		padding-left: 8px;
 		padding-right: 8px; 
+	}
+	.contact-row{
+		padding-left: 8px;
 	}
 }
 .common-header-row{
