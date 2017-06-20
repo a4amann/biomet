@@ -56,8 +56,13 @@ background-size: cover;
 }
 .side {
 	border-bottom: 1px solid LightGrey;
-	padding: 7px 0 7px 0;
+	padding: 7px 0px 7px 0px;
 }
+.sidelink .side{
+	padding-left: 7px;
+}
+
+
 .nav-top{
 	font-size: 20px;
 }
@@ -104,6 +109,7 @@ td, th {
  -moz-transition: all 0.5s ease;
  -o-transition: all 0.5s ease;
  transition: all 0.5s ease;
+
 }
 .contact-address, .advisor-name, .post{
 	font-size: 18px;
