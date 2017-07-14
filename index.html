@@ -218,10 +218,10 @@ html,body{
 							<p>Subscribe to stay updated.</p>
 							<form>
 								<label>Email Address</label><br>
-								<input class="form-control" type="email" name="email" required>
+								<input class="form-control submail" type="email" name="email" required>
 								<!-- <label>Your name</label><br>
 								<input class="form-control" type="text"> -->
-								<input type="submit" class="btn btn-danger" value="subscribe" style="margin-top:10px;">
+								<input type="submit" class="btn btn-danger mailsub" value="subscribe" style="margin-top:10px;">
 							</form>
 							<hr>
 							<h3 class="index-head">News</h3><br>
@@ -271,6 +271,12 @@ html,body{
 			$('.down').click(function() {
 				$('html, body').animate({scrollTop: $('.index-body').offset().top}, 1000);
 
+			});
+			$(".mailsub").click(function(){
+				var data = document.getElementsByClassName('submail').value;
+    		$.post("https://biometdb.herokuapp.com/subscribe/create",data,function(data, status){
+					alert(data);
+				});
 			});
 		});
 
