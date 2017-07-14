@@ -218,7 +218,7 @@ html,body{
 							<p>Subscribe to stay updated.</p>
 							<form>
 								<label>Email Address</label><br>
-								<input class="form-control submail" type="email" name="email" required>
+								<input class="form-control" id="submail" type="email" name="email" required>
 								<!-- <label>Your name</label><br>
 								<input class="form-control" type="text"> -->
 								<input type="submit" class="btn btn-danger mailsub" value="subscribe" style="margin-top:10px;">
@@ -273,9 +273,13 @@ html,body{
 
 			});
 			$(".mailsub").click(function(){
-				var data = document.getElementsByClassName('submail').value;
-    		$.post("https://biometdb.herokuapp.com/subscribe/create",data,function(data, status){
-					alert(data);
+    		$.post("https://biometdb.herokuapp.com/subscribe/create",
+				{
+					email: document.getElementById('submail').value,
+					auth: "harshitkediabiometdatabase"
+				},
+				function(data, status){
+					console.log("saurav");
 				});
 			});
 		});
