@@ -15,7 +15,7 @@ html, body{
 @media screen and (max-width: 699px){
 	.about-text{
 		padding-left: 8px;
-		padding-right: 8px; 
+		padding-right: 8px;
 	}
 	.contact-row{
 		padding-left: 8px;
@@ -45,13 +45,13 @@ html, body{
 .common-header-bg-1{
 	height: 180px;
 	width: 100%;
-	background-image: url('{{site.baseurl}}/img/vit_tt.jpg');
+	background-image: url('../img/vit_tt.jpg');
 background-size: cover;
 }
 .common-header-bg-2{
 	height: 180px;
 	width: 100%;
-	background-image: url('{{site.baseurl}}/img/vit_tt_1.jpg');
+	background-image: url('../img/vit_tt_1.jpg');
 background-size: cover;
 }
 .side {
@@ -134,6 +134,6 @@ td, th {
 #lakshmi{
 	height: 133px;
 }
-#abhay{	
+#abhay{
 	height: 133px;
 }
