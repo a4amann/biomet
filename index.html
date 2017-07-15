@@ -220,7 +220,7 @@ html,body{
 								<input class="form-control" id="submail" type="email" name="email" required>
 								<!-- <label>Your name</label><br>
 								<input class="form-control" type="text"> -->
-								<input type="submit" class="btn btn-danger mailsub" value="subscribe" style="margin-top:10px;">
+								<input class="btn btn-danger mailsub" id="mailsub" value="subscribe" style="margin-top:10px;">
 							</form>
 							<hr>
 							<h3 class="index-head">News</h3><br>
@@ -245,20 +245,23 @@ html,body{
 
 		<br><br>
 		<div class="well row" style="margin-bottom:0px;font-weight:bold;">
-			<p class="text-center">International conference on BioMaterials, BioEngineering, and BioTheronostics<br>
-				Organized by <br>Center for Biomaterials, Cellular and Molecular Theronostics,<br> VIT University, Vellore - 632 014.	<br>
-				In association with:<br> <ul class="list-unstyled text-center"><li><b>Society for Biomaterials and Artifical Organs (India)</b></li><li><b>Society for Tissue Engineering and Regenerative Medicine (India)</b></li></p>
-				<ul class="list-unstyled list-inline text-center">
-					<li><a href="contact.html" class="footer-link">Contacts</a></li>|
-					<li><a href="dates.html" class="footer-link">Important Dates</a></li>|
-					<li><a href="about.html" class="footer-link">About</a></li>|
-					<li><a href="#" class="footer-link">Home</a></li>
-				</ul><br>
-				<div class="logoandname" class="text-center">
-					<!-- <img src="img/acm.png" height="70px" width="130px"> -->
-					<p><span>Made by: <a href="https://twitter.com/sauravbhagat15" id="myname">saurav kumar bhagat</a> </p>
-
-				</div>
+			<div class="col-sm-9 col-xs-12">
+				<p class="text-center">International conference on BioMaterials, BioEngineering, and BioTheronostics<br>
+					Organized by <br>Center for Biomaterials, Cellular and Molecular Theronostics,<br> VIT University, Vellore - 632 014.	<br>
+					In association with:<br> <ul class="list-unstyled text-center"><li><b>Society for Biomaterials and Artifical Organs (India)</b></li><li><b>Society for Tissue Engineering and Regenerative Medicine (India)</b></li></p>
+						<ul class="list-unstyled list-inline text-center">
+							<li><a href="contact.html" class="footer-link">Contacts</a></li>|
+							<li><a href="dates.html" class="footer-link">Important Dates</a></li>|
+							<li><a href="about.html" class="footer-link">About</a></li>|
+							<li><a href="#" class="footer-link">Home</a></li>
+						</ul>
+			</div>
+			<div class="col-sm-3 col-xs-12 text-center">
+						<div class="logoandname" class="text-center"><br><br>
+							<a href="https://acmvit.in"><img src="img/acm.png" height="100px" width="180px"></a>
+							<p><span>Made by: <a href="https://twitter.com/sauravbhagat15" id="myname">saurav kumar bhagat</a> </p>
+						</div
+			</div>
 
 		</div>
 	<!--</div>-->
@@ -272,13 +275,25 @@ html,body{
 
 			});
 			$(".mailsub").click(function(){
+				var x = document.getElementById('submail').value;
+				var atpos = x.indexOf("@");
+				var dotpos = x.lastIndexOf(".");
+				if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+					alert("Not a valid e-mail address");
+					return ;
+				}
+				document.getElementById('mailsub').value="submitting..";
+				$('#mailsub').addClass('disabled');
     		$.post("https://biometdb.herokuapp.com/subscribe/create",
 				{
 					email: document.getElementById('submail').value,
 					auth: "harshitkediabiometdatabase"
 				},
 				function(data, status){
-					console.log("saurav");
+					console.log(status);
+					document.getElementById('submail').value = "";
+					document.getElementById('mailsub').value="Subscribe";
+					$('#mailsub').removeClass('disabled');
 				});
 			});
 		});
