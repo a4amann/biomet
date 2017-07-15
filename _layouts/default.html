@@ -149,13 +149,21 @@
 				<div class="col-sm-3 col-xs-12 text-center">
 					<div class="logoandname">
 						<a href="https://acmvit.in" ><img src="img/acm.png" height="100px" width="180px"></a>
-						<p><span>Made by: <a href="https://twitter.com/sauravbhagat15" id="myname">saurav kumar bhagat</a> </p>
+						<p style="font-size: 13px;"><span>Made by: <a href="https://twitter.com/sauravbhagat15" id="myname">saurav kumar bhagat</a> </p>
 					</div>
 				</div>
-
+				<button class="btn btn-info" id="clickk">Get Url</button>
 	</div>
+
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('#clickk').click(function() {
+				console.log(window.location.href);
+			});
+		});
+	</script>
 
 </body>
 </html>
