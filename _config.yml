@@ -1,5 +1,0 @@
-markdown: redcarpet
-baseurl: /biomet
-encoding: UTF-8
-
-exclude: ['README.md']

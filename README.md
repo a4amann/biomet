@@ -1,2 +1,0 @@
-# biomet jekyll website
-# biomet
